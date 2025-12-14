@@ -171,7 +171,7 @@ exec_always --no-startup-id bash ~/.config/polybar/launch.sh
 exec --no-startup-id picom -b
 
 # make the windows look a bit nicer
-for_window [class=".*"] border none
+for_window [class=".*"] border pixel 3
 
-gaps outer 10
-gaps inner 10
+gaps outer 15
+gaps inner 15
