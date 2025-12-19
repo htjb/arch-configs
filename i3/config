@@ -164,11 +164,12 @@ bindsym $mod+c exec chromium
 bindsym $mod+ctrl+q exec betterlockscreen -l dimblur
 
 # Display Wallpaper
-exec_always --no-startup-id feh --bg-fill ~/.config/i3/arch_wallpaper.png
+#exec_always --no-startup-id feh --bg-fill ~/.config/i3/arch_wallpaper.png
+exec_always --no-startup-id feh --bg-fill ~/.config/i3/marita-kavelashvili-ugnrXk1129g-unsplash.jpg
 
 exec_always --no-startup-id bash ~/.config/polybar/launch.sh
 
-exec --no-startup-id picom --config ~/.config/picom/picom.conf -b
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf -b
 
 # make the windows look a bit nicer
 for_window [class=".*"] border pixel 3
