@@ -176,3 +176,6 @@ for_window [class=".*"] border pixel 3
 
 gaps outer 15
 gaps inner 15
+
+focus_follows_mouse yes
+focus_on_window_activation smart
