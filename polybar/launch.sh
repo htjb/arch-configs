@@ -4,7 +4,9 @@
 polybar-msg cmd quit 2>/dev/null || killall -q polybar
 
 # Launch your bar
-polybar mybar &
+for m in $(polybar --list-monitors | cut -d: -f1); do
+    MONITOR=$m polybar mybar &
+done
 
 echo "Polybar launched"
 
